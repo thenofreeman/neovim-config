@@ -28,3 +28,10 @@ vim.keymap.set('n', '<leader>sw', builtin.lsp_workspace_symbols, { desc = 'Searc
 -- Execute a code action, usually your cursor needs to be on top of an error
 -- or a suggestion from your LSP for this to activate.
 -- map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction', { 'n', 'x' })
+
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'markdown',
+  callback = function()
+    vim.bo.formatprg = 'prettier --stdin-filepath % --parser markdown'
+  end,
+})

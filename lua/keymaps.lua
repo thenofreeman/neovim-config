@@ -1,6 +1,12 @@
 -- Keymaps
 --  See `:help vim.keymap.set()`
 
+vim.keymap.set('n', '<leader>qq', ':q<CR>', { desc = 'Quit nvim' })
+vim.keymap.set('n', '<leader>qQ', ':q<CR>', { desc = 'Quit nvim (force quit all buffers)' })
+vim.keymap.set('n', '<leader>q!', ':q!<CR>', { desc = 'Quit nvim (force quit current buffer)' })
+vim.keymap.set('n', '<leader>qw', ':wq<CR>', { desc = 'Save current buffer and quit nvim' })
+-- vim.keymap.set('n', '<leader>qW', ':wq<CR>', { desc = 'Save all buffers and quit nvim' })
+
 require 'keymaps/buffers'
 require 'keymaps/documentation'
 require 'keymaps/editing'
