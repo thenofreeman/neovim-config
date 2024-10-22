@@ -12,6 +12,7 @@ require 'keymaps/documentation'
 require 'keymaps/editing'
 require 'keymaps/files'
 require 'keymaps/open'
+require 'keymaps/quit'
 require 'keymaps/qol'
 require 'keymaps/windows'
 
@@ -26,6 +27,7 @@ wk.add {
   { '<leader>h', group = 'Help' },
   { '<leader>o', group = 'Open' },
   { '<leader>p', group = 'Project' },
+  { '<leader>q', group = 'Quit' },
   { '<leader>t', group = 'Toggle' },
   { '<leader>w', group = 'Window' },
 }
