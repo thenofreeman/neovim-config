@@ -14,6 +14,7 @@ require 'autocommands'
 require 'options'
 require 'keymaps'
 
+require 'functions.lprompt'
 --
 --
 --
